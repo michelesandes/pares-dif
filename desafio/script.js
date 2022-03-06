@@ -13,19 +13,23 @@ function pares(){ // função para acessar o vetor em duas opções
     
     for (let n = 0; n < vetor.length; n++)  { 
         for(let y = 0; y < vetor.length ; y++){
-            resp.innerHTML += conpares(vetor[n],vetor[y])
+            if(conpares(vetor[n],vetor[y]) == true){
+                resp.innerHTML += `[${vetor[n]} , ${vetor[y]} ]`
+            }else{
+                resp.innerHTML += 'erro!'
+            }
         }
         
     }
 
-    resp.innerHTML += `A quantidade de pares ${qpares}`
-    resp.innerHTML += `Com a diferença ${dif}`
+    resp.innerHTML += `<br>A quantidade de pares ${qpares}`
+    resp.innerHTML += `<br>Com a diferença ${dif}`
 
 
     function conpares(x,y) { // função para analisar a diferença dos pares
         if(x-y == dif){
             qpares++
-            return `[ ${x} , ${y}]`
+            return true
         }
     }
 
