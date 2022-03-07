@@ -1,0 +1,46 @@
+@charset "TF8";
+
+*{
+    margin: 4px;
+    padding: 0px;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    color: rgb(22, 122, 214);
+    background-color: rgba(0, 0, 255, 0.267);
+}
+
+header{
+    text-align: center;
+    background-color: rgba(2, 2, 175, 0.466);
+    padding: 30px 10px;
+    color: rgb(255, 255, 255);
+    border-radius: 120px 10px;
+
+}
+header > p{
+    padding-top: 15px;
+    color: rgb(6, 6, 78);
+    font-weight: bold;
+}
+main{
+    margin: 10px 10px;
+    border-style: solid;
+    border-radius: 10px;
+    padding: 10px 10px;
+    
+}
+main> div{
+    padding: 10px;
+    margin: auto;
+    text-align:left;
+    color: rgb(15, 15, 31);
+    
+}
+
+#resp{
+    padding: 10px;
+}
